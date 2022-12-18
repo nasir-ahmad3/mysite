@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-18 05:53-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: base/forms.py:17
+msgid "Enter Your Name"
+msgstr "نام خود را وارد کنید"
+
+#: base/forms.py:18
+msgid "Enter Your Email Address"
+msgstr "ایمیل آدرس خود را وارد کنید"
+
+#: base/forms.py:19
+msgid "Inquiry"
+msgstr "استعلام"
+
+#: base/forms.py:20
+msgid "Enter Your Message"
+msgstr "پیام خود را وارد کنید"
+
+#: templates/about/list.html:5 templates/base/base.html:34
+msgid "about me"
+msgstr "درباره من"
+
+#: templates/about/list.html:17
+msgid "MY_CV"
+msgstr "CV من"
+
+#: templates/base/base.html:22
+msgid "Menu"
+msgstr "مینو"
+
+#: templates/base/base.html:25
+msgid "Home"
+msgstr "صفحه یی اصلی"
+
+#: templates/base/base.html:28 templates/projects/list.html:5
+msgid "projects"
+msgstr "پروژه ها"
+
+#: templates/base/base.html:31
+msgid "Skills"
+msgstr "مهارت ها"
+
+#: templates/base/base.html:37
+msgid "contact"
+msgstr "ارتباط"
+
+#: templates/base/base.html:41
+msgid "Selecting Language"
+msgstr "انتخاب زبان"
+
+#: templates/base/base.html:46
+msgid "English"
+msgstr "انگلسی"
+
+#: templates/base/base.html:51
+msgid "Portuguese"
+msgstr "پرتغالی برازیلی"
+
+#: templates/base/base.html:56
+msgid "persion"
+msgstr "فارسی"
+
+#: templates/base/base.html:72
+msgid "hello, i'm"
+msgstr "سلام من"
+
+#: templates/base/base.html:73
+msgid "nasir ahmad ahmdy."
+msgstr "نصیر احمد احمدی"
+
+#: templates/base/base.html:74
+msgid "i am the web developer."
+msgstr "برنامه نویس ویب استم"
+
+#: templates/contact/base.html:9
+msgid "Django Email Send"
+msgstr "جنگو ایمیل ارسال شد"
+
+#: templates/contact/contact.html:7
+msgid "Contact Us"
+msgstr "ارتباط با من"
+
+#: templates/contact/contact.html:13
+msgid "Send message"
+msgstr "ارسال پیام"
+
+#: templates/contact/list.html:5
+msgid "contact us"
+msgstr "ارتباط"
+
+#: templates/contact/list.html:6
+msgid "you can also contact me with nasirahmadahmady0@gmail.com imail."
+msgstr ""
+"شما همچنان می توانید از طریق ایمیل آدرس nasirahmadahmady0@gmail.com با من به "
+"تماس شوید."
+
+#: templates/contact/list.html:9
+msgid "contact info"
+msgstr "راه های ارتباط"
+
+#: templates/contact/list.html:13
+msgid "address"
+msgstr "آدرس"
+
+#: templates/contact/list.html:20
+msgid "phone"
+msgstr "شماره تماس"
+
+#: templates/contact/list.html:27
+msgid "email"
+msgstr "ایمیل"
+
+#: templates/contact/list.html:34
+msgid "message me"
+msgstr "ارسال پیام برای من"
+
+#: templates/contact/list.html:48
+msgid "send"
+msgstr "ارسال"
+
+#: templates/contact/success.html:6
+msgid "We sent your message"
+msgstr "پیام شما ارسال شد"
+
+#: templates/contact/success.html:7
+msgid "contact page"
+msgstr "صفحه یی ارتباط"
+
+#: templates/projects/list.html:37
+msgid "More Projects"
+msgstr "پروژه های بیشتر"
+
+#: templates/skills/list.html:6
+msgid "My Skills"
+msgstr "مهارت های من"
+
+#~ msgid "This field is required."
+#~ msgstr "این فیلد لازمی است"

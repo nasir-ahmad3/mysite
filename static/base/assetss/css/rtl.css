@@ -1,0 +1,23 @@
+@import 'fonts.css';
+body{
+	direction: rtl !important;
+	text-align: right !important;
+	font-family: sahel !important;
+}
+div.header{
+	padding-right: 110px;
+	transform: rotateY(180deg);
+}
+div.title{
+	transform: scaleX(-1);
+}
+#title,
+.title{
+	font-family: sahel !important;
+}
+input {
+  padding-right: 30px;
+}
+section.contact-us > .contact .message form h1{
+	text-align: right;
+}
