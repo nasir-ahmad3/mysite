@@ -2,9 +2,9 @@
 {% load i18n %}
 <!-- projects -->
 <section class="projects">
-	<a href="{% url 'projects:ProjectList' %}" id="projects"><h1 class="title">{% trans 'projects' %}</h1></a>
+	<a href="{% url 'projects:ProjectList' %}" id="projects"><h1 class="title">{% trans 'Last projects' %}</h1></a>
 	<div class="projects-wrapper">
-		{% for project in projec_list %}
+		{% for project in project_list %}
 			<div class="project"> 
 				<div class="img" style="background-image: url('{{project.thumbnail.url}}');"></div>
 				<div class="logo" style="background-image: url(
@@ -29,12 +29,12 @@
 					<h1 class="title" >{{project.title}}</h1>
 					<p class="description">{{project.description|truncatewords:30}}</p>
 					<div class="btn-wrapper">
-						<a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>preview</a>
-						<a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>download</a>
+						<a href="" target="_blank" class='download-btn'>preview</a>
+						<a href="" target="_blank" class='download-btn'>download</a>
 					</div>
 				</div>
 			</div>
-		{% endfor %}
+		{% endfor %}		
 	</div>
 	{% if request.get_full_path == '/' %}
 		<a href="{% url 'projects:ProjectList' %}" class="show-more">{% trans 'More Projects' %}</a>

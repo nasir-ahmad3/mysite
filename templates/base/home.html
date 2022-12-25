@@ -1,8 +1,11 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load projects_tags %}
+
 {% block main %}
 	<!-- projects -->
-	{% include 'projects/list.html' %}
+	{% last_projects %}
+
 	<!-- skills -->
 	{% include 'skills/list.html' %}
 	<!-- about me -->
@@ -10,3 +13,4 @@
 	<!-- contact us -->
 	{% include 'contact/list.html' %}
 {% endblock %}
+{% include 'projects/list.html' %}

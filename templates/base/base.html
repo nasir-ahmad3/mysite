@@ -8,11 +8,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<!-- ---------------------------------------------- styles ------------------------------------------ -->
+	
 	<link rel="stylesheet" href="{% static 'base/assetss/css/main.css' %}">
 	{% if LANGUAGE_CODE == 'per' %}
 		<link rel="stylesheet" href="{% static 'base/assetss/css/rtl.css' %}">
 	{% endif %}
 	<!-- ----------------------------------------------------------------------------------------------------- -->
+	<!-- swipper  -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<!-- end swipper  -->
 	<title>nasir ahmad ahamdy programmer</title>
 </head>
 <body>
@@ -98,5 +104,29 @@
 	<!-- /the footer -->
 	<!-- ------------------------------------------------- main js ---------------------------------------- -->
 	<script src="{% static 'base/assetss/js/script.js' %}"></script>
+	<!-- touch slider -->
+	<script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:4,
+               nav: false
+             }
+           }
+         });
+      </script>
 </body>
 </html>

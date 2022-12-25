@@ -14,7 +14,7 @@ body > nav{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 120px;
+	height: 120px; 
 	background-color: transparent;
 	display: flex;
 	align-items: center;
@@ -168,8 +168,14 @@ body > section > a > h1.title{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 100px;
     margin-bottom: 30px;
+}
+.min-title {
+  margin-right: auto;
+  padding-left: 41px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: PoppinsBold;
 }
 .show-more {
   text-decoration: none;
@@ -213,6 +219,8 @@ body > section > a > h1.title{
 }
 .content{
 	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
 }
 .project .content > .title {
 	text-transform: capitalize;
@@ -221,18 +229,21 @@ body > section > a > h1.title{
 	text-decoration: none;
     color: #000;
 }
+.content .btn-wrapper{
+	width: 100%;
+	height: 20px;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 50px;
+}
 a.download-btn {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 8px 28px;
-    background-color: #552881;
-    border-radius: 20px;
-    text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	background-color: #552881;
+	border-radius: 10px;
+	text-transform: capitalize;
+	font-size: 16px;
+	padding: 7px 15px;
 }
 section.skills{
 	width: 100%;
@@ -501,7 +512,7 @@ section.contact-us > .contact .message form button{
 		overflow: hidden !important;
 	}
 	nav.active{
-		height: 470px !important;
+		height: 700px !important;
 	}
 	nav > .left .button-menu{
 		margin-top: 10px;
@@ -520,6 +531,14 @@ section.contact-us > .contact .message form button{
 	}
 	nav .left > ul  > li{
 		width: 100%;
+	}
+	li ul{
+		opacity: 1;
+		pointer-events: auto;
+		top: 20px;
+	}
+	li ul li{
+		list-style: circle !important;
 	}
 	nav .left > ul  > li > a{
 		color: #000;
@@ -597,4 +616,30 @@ section.contact-us > .contact .message form button{
 	.skills .skill .show {
   		width: 250px;
   	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+  width: 100%;
+}
+.carousel{
+  margin: auto;
 }
