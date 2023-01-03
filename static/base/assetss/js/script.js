@@ -14,3 +14,25 @@ let btn = document.querySelector('.button-menu')
 btn.addEventListener('click', e => {
 	nav.classList.toggle('active')
 })
+
+
+
+let cards = document.querySelectorAll('.card-wrapper > .card')
+
+Array.from(cards).forEach(card => {
+	card.addEventListener('mouseover', e => {
+		Array.from(cards).forEach(c => {
+			c.classList.remove('active')
+			c.classList.add('deactive')
+		})
+		card.classList.remove('deactive')
+		card.classList.add('active')
+	})
+	card.addEventListener('mouseleave', e => {
+		Array.from(cards).forEach(c => {
+			c.classList.remove('active')
+			c.classList.remove('deactive')
+		})
+	})
+})
+

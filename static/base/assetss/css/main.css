@@ -193,8 +193,8 @@ body > section > a > h1.title{
 	background-color: #fff;
 	overflow: hidden;
 	position: relative;
-    box-shadow: 10px 10px 24px -1px rgb(0 0 0 / 25%);
-    margin: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin: 20px;
 }
 .project > .img{
 	width: 100%;
@@ -218,7 +218,7 @@ body > section > a > h1.title{
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
 }
 .content{
-	margin-top: 50px;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
@@ -245,72 +245,91 @@ a.download-btn {
 	font-size: 16px;
 	padding: 7px 15px;
 }
-section.skills{
+section.my_skills{
+	position: relative;
+	background: linear-gradient(90deg, rgba(0,93,79,1) 15%, rgba(126,0,114,1) 100%);
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+section.my_skills > h1.title{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	font-family: PoppinsBold;
+	color: #fff;
+}
+section.my_skills .card-wrapper{
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #2c1d5e;
-	padding: 50px 0 ;
+	flex-wrap: wrap;
+
 }
-.skill-wrapper{
+section.my_skills .card{
+	width: 300px;
+	height: 500px;
+	background: #fff;
+	padding: 7px;
+	border-radius: 10px;
+	margin: 30px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	transform: scale(1);
+	transition: all 1s;
+}
+section.my_skills .card.deactive{
+	filter: blur(20px);
+}
+section.my_skills .card.active{
+	transform: scale(1.1);
+}
+section.my_skills .card .logo{
+	width: 100%;
+	height: 50%;
+	background: var(--bg-color);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom-right-radius: 150px;
+	margin-bottom: 20px;
+	transition: all 1s;
+}
+section.my_skills .card.active .logo{
+	border-bottom-right-radius: 0px;
+
+}
+section.my_skills .card .logo i{
+	font-size: 90px;
 	color: #fff;
 }
-.skill-wrapper > h1.title{
-	margin-bottom: 20px;
-	text-transform: capitalize;
+section.my_skills .card .content{
 	text-align: center;
-	font-size: 40px;
-	font-family: PoppinsBold;
+	color: #a19f9f;
 }
-.skills .skill{
-	margin: 15px 0;
-}
-.skills .skill .show{
-	width: 800px;
-	height: 20px;
-	margin-bottom: 5px;
-	border-radius: 10px;
-	border: solid #fff 1px;
-	position: relative;
-	overflow: hidden;
-}
-.skills .skill .show .line{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border-right: solid #fff 1px;
-	background: repeating-linear-gradient(-45deg, #ffffff54 0px 10px, transparent 10px 22.5px);
-	animation: animate 8s linear infinite;
-	text-align: right;
-	font-weight: bolder;
-}
-.skills .skill .show .num{
-	background: #2c1d5e;
-	z-index: 100%;
-	position: relative;
-	left: var(--num);
-	border-left: solid #fff 1px;
-}
-.skills .skill .show .num > p{
-	position: relative;
-	left: -35px;
-}
-.skills .skill .show:hover{
-	background-position: 0%;
-	cursor: pointer;
-}
-@keyframes animate{
-	0%{
-		background-position: 0 0px;
-	}
-	100%{
-		background-position: 1000px 0px;
-	}
-}
-.skills .skill .name{
+section.my_skills .card .content .title{
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 500;
+	font-size: 23px;
+
+}
+section.my_skills .card .content .main-content{
+	margin: 20px 0;
+	padding: 0 20px;
+}
+section.my_skills .card .content .skill-btn{
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	background: var(--bg-color);
+	padding: 7px 35px;
+	border-radius: 20px;
+	display: inline-block;
+	margin-top: 20px;
 
 }
 section.about_me{

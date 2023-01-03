@@ -3,148 +3,184 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-18 06:07-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2023-01-03 06:27-0500\n"
+"PO-Revision-Date: 2023-01-03 06:30-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
 #: base/forms.py:17
 msgid "Enter Your Name"
-msgstr ""
+msgstr "Digite seu nome"
 
 #: base/forms.py:18
 msgid "Enter Your Email Address"
-msgstr ""
+msgstr "Enter Your Email Address"
 
 #: base/forms.py:19
 msgid "Inquiry"
-msgstr ""
+msgstr "Investigação"
 
 #: base/forms.py:20
 msgid "Enter Your Message"
-msgstr ""
+msgstr "Digite sua mensagem"
 
-#: templates/about/list.html:5 templates/base/base.html:34
+#: templates/about/list.html:5 templates/base/base.html:40
 msgid "about me"
-msgstr ""
+msgstr "sobre mim"
 
 #: templates/about/list.html:17
 msgid "MY_CV"
-msgstr ""
+msgstr "MEU_CV"
 
-#: templates/base/base.html:22
+#: templates/base/base.html:28
 msgid "Menu"
-msgstr ""
-
-#: templates/base/base.html:25
-msgid "Home"
-msgstr ""
-
-#: templates/base/base.html:28 templates/projects/list.html:5
-msgid "projects"
-msgstr ""
+msgstr "Cardápio"
 
 #: templates/base/base.html:31
-msgid "Skills"
-msgstr ""
+msgid "Home"
+msgstr "Página principal"
+
+#: templates/base/base.html:34 templates/partials/projects.html:6
+#: templates/projects/list.html:5
+msgid "projects"
+msgstr "projetos"
 
 #: templates/base/base.html:37
+msgid "Skills"
+msgstr "Habilidades"
+
+#: templates/base/base.html:43
 msgid "contact"
-msgstr ""
+msgstr "contato"
 
-#: templates/base/base.html:41
+#: templates/base/base.html:47
 msgid "Selecting Language"
-msgstr ""
+msgstr "Seleção de idioma"
 
-#: templates/base/base.html:46
+#: templates/base/base.html:52
 msgid "English"
-msgstr ""
+msgstr "Inglês"
 
-#: templates/base/base.html:51
+#: templates/base/base.html:57
 msgid "Portuguese"
-msgstr ""
+msgstr "Português"
 
-#: templates/base/base.html:56
+#: templates/base/base.html:62
 msgid "persion"
-msgstr ""
+msgstr "persa"
 
-#: templates/base/base.html:72
+#: templates/base/base.html:67
+msgid "Deutsch"
+msgstr "Alemão"
+
+#: templates/base/base.html:83
 msgid "hello, i'm"
-msgstr ""
+msgstr " Olá eu sou"
 
-#: templates/base/base.html:73
+#: templates/base/base.html:84
 msgid "nasir ahmad ahmdy."
-msgstr ""
+msgstr "nasir ahmad ahmdy."
 
-#: templates/base/base.html:74
+#: templates/base/base.html:85
 msgid "i am the web developer."
-msgstr ""
+msgstr "eu sou o desenvolvedor web."
 
 #: templates/contact/base.html:9
 msgid "Django Email Send"
-msgstr ""
+msgstr "Enviar E-mail Django"
 
 #: templates/contact/contact.html:7
 msgid "Contact Us"
-msgstr ""
+msgstr "Contact Us"
 
 #: templates/contact/contact.html:13
 msgid "Send message"
-msgstr ""
+msgstr "Enviar mensagem"
 
 #: templates/contact/list.html:5
 msgid "contact us"
-msgstr ""
+msgstr " Contate-Nos"
 
 #: templates/contact/list.html:6
 msgid "you can also contact me with nasirahmadahmady0@gmail.com imail."
 msgstr ""
+"você também pode entrar em contato comigo com nasirahmadahmady0@gmail.com "
+"imail."
 
 #: templates/contact/list.html:9
 msgid "contact info"
-msgstr ""
+msgstr "contact info"
 
 #: templates/contact/list.html:13
 msgid "address"
-msgstr ""
+msgstr "morado"
 
 #: templates/contact/list.html:20
 msgid "phone"
-msgstr ""
+msgstr "telefone"
 
 #: templates/contact/list.html:27
 msgid "email"
-msgstr ""
+msgstr "o email"
 
 #: templates/contact/list.html:34
 msgid "message me"
-msgstr ""
+msgstr "me mande uma mensagem"
 
 #: templates/contact/list.html:48
 msgid "send"
-msgstr ""
+msgstr "enviar"
 
 #: templates/contact/success.html:6
 msgid "We sent your message"
-msgstr ""
+msgstr "Enviamos sua mensagem"
 
 #: templates/contact/success.html:7
 msgid "contact page"
-msgstr ""
+msgstr "página de contato"
 
-#: templates/projects/list.html:37
+#: templates/partials/projects.html:8
+msgid "last projects"
+msgstr "últimos projetos"
+
+#: templates/partials/projects.html:56
+msgid "html projects"
+msgstr "projetos html"
+
+#: templates/partials/projects.html:101
+msgid "css projects"
+msgstr "projetos css"
+
+#: templates/partials/projects.html:146
+msgid "javascript projects"
+msgstr "projetos javascript"
+
+#: templates/partials/projects.html:191
+msgid "bootstrap projects"
+msgstr "projetos de bootstrap"
+
+#: templates/partials/projects.html:236
+msgid "python projects"
+msgstr "projetos python"
+
+#: templates/partials/projects.html:281
+msgid "django projects"
+msgstr "projetos django"
+
+#: templates/partials/projects.html:329 templates/projects/list.html:46
 msgid "More Projects"
-msgstr ""
+msgstr "Mais projetos"
 
-#: templates/skills/list.html:6
-msgid "My Skills"
-msgstr ""
+#: templates/skills/list.html:3
+msgid "my skills"
+msgstr "minhas habilidades"

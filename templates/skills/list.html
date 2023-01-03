@@ -1,20 +1,20 @@
 {% load i18n %}
-<!-- skill bar -->
-<section class="skills">
-<a id="skills"></a>
-	<div class="skill-wrapper">
-	<h1 class="title">{% trans 'My Skills' %}</h1>
-	<div class="skills">
+<section class="my_skills">
+	<h1 class="title">{% trans 'my skills' %}</h1>
+	<div class="card-wrapper">
 		{% for skill in skill_list %}
-			<div class="skill">
-				<div class="show">
-					<div class="line"></div>
-					<div class="num"  style="--num:{{skill.learn_presentage}}%;"><p>{{skill.learn_presentage}}%</p></div>
+			<div class="card" style="--bg-color: {{skill.bg_color}}">
+				<div class="logo">
+					{{skill.logo|safe}}
 				</div>
-				<div class="name">{{skill.title}}</div>
+				<div class="content">
+					<div class="title">{{ skill.title }}</div>
+					<p class="main-content">
+						{{ skill.description }}
+					</p>
+					<a href="#" class="skill-btn">{{ skill.title }}</a>
+				</div>
 			</div>
 		{% endfor %}
 	</div>
-</div>
 </section>
-<!-- /skill bar -->

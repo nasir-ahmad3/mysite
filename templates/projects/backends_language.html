@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'projects/backend_projects/backend_projects_main.css' %}">
+	<title>Backend Projects</title>
+</head> 
+<body style="background-image: url({% static 'projects/backend_projects/bg.jpg' %});">
+	<div class="message-wrapper">
+		<div class="left">
+			<h1 class="title">oops!</h1>
+			<p class="message">we can't show the page you requested In order for the selected project to run on the server</p>
+			<p class="maybe">Please download and run the codes from the following address:</p>
+			<a href="{{downlaod_link}}" class="button download">Download Projects</a>
+			<a href="{% url 'base:home' %}" class="button back">back to home</a>
+		</div>
+		<div class="right">
+			<div class="img" style="background-image: url({% static 'projects/backend_projects/per.png' %})"></div>
+		</div>
+	</div>
+</body>
+</html>

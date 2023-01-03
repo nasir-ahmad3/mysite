@@ -3,8 +3,8 @@ from .models import Skill
 
 # Register your models here.
 class SkillAdmin(admin.ModelAdmin):
-	list_display = ['title', 'learn_presentage']
-	list_filter= ('learn_presentage',)
-	search_fields = ('title', 'learn_presentage')
-	ordering = ('learn_presentage',)
+	list_display = ['title', 'description']
+	list_filter= ('description',)
+	search_fields = ('title', 'description')
+	ordering = ('description',)
 admin.site.register(Skill, SkillAdmin)

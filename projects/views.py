@@ -3,6 +3,9 @@ from django.views.generic import ListView, DetailView
 from .models import Project
 from django.http import HttpResponse
 
+
+
+
 # Create your views here.
 class ProjectList(ListView):
 	queryset = Project.objects.published()
@@ -13,3 +16,19 @@ class ProjectDetail(DetailView):
 	def get_object(self):
 		slug = self.kwargs.get('slug')
 		return get_object_or_404(Project.objects.published(), slug=slug)
+
+
+
+class BackendLanguages(DetailView):
+	template_name = 'projects/backends_language.html'
+	
+	def get_object(self):
+		global project
+		slug = self.kwargs.get('slug')
+		project = get_object_or_404(Project.objects.published(), slug=slug)
+		return project 
+
+	def get_context_data(self, **kwargs):
+		context = super().get_context_data(**kwargs)
+		context['downlaod_link'] = project.downlaod_link
+		return context

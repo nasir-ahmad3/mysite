@@ -36,7 +36,11 @@
                               <div class="btn-wrapper">
                                  <a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>preview</a>
                                  {% if project.is_private == False %}
-                                    <a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>download</a>
+                                    {% if project.language_type == 'p' or project.language_type == 'd' %}
+                                       <a href="{% url 'projects:backend_languages' project.slug %}" target="_blank" class='download-btn'>download</a>
+                                    {% else  %}
+                                       <a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>download</a>
+                                    {% endif %}
                                  {% endif %}
 
                               </div>
@@ -304,9 +308,13 @@
                                  <p class="description">{{project.description|truncatewords:30}}</p>
                                  <div class="btn-wrapper">
                                     <a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>preview</a>
-                                    {% if project.is_private == False %}
+                                 {% if project.is_private == False %}
+                                    {% if project.language_type == 'p' or project.language_type == 'd' %}
+                                       <a href="{% url 'projects:backend_languages' project.slug %}" target="_blank" class='download-btn'>download</a>
+                                    {% else  %}
                                        <a href="{% url 'projects:ProjectDetail' project.slug %}" target="_blank" class='download-btn'>download</a>
                                     {% endif %}
+                                 {% endif %}
 
                                  </div>
                               </div>
